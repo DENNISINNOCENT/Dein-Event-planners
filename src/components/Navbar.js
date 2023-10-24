@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/images (3).jpeg";
 import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
-// import Button from "./Book";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false)  
   return (
@@ -33,9 +33,7 @@ const Navbar = () => {
             <Link to="/" className="inline-block py-7 px-3">Home</Link>
           </li>
           <NavLink />
-          <div className="py-4">
-            {/* <Button/>  */}
-          </div>
+         
 
         </ul>
       </div>

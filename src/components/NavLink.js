@@ -8,7 +8,7 @@ const NavLink = () => {
       {NavLinks.map((NavLink) => (
         <div>
           <div className="text-left md:cursor-pointer px-3 group">
-            <h1 className="py-7  ">{NavLink.name}</h1>
+            <Link to ={NavLink.path} className="py-7  ">{NavLink.name}</Link>
             {NavLink.subMenu && (
               <div className="absolute top-10 hidden group-hover:md:block hover:md:block py-5 ">
                 <div className="py-2">

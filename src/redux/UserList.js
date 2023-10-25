@@ -32,7 +32,7 @@ export const UserList = () => {
       <h1 className="md:flex justify-around font-[Poppins] text-3xl font-extrabold m-5">Clients Bookings</h1>
     <div className="md:flex justify-around font-[Poppins] text-medium m-5">
       
-      <table className="border-2 border-black border-spacing-8">
+      <table className="border-2 border-black border-spacing">
         <thead className="" >
           <tr className="border-black border-2 px-2">
             <th className="border-black border-2 px-2">ID</th>

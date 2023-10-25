@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { addUser } from "./userSlice";
 import { useDispatch } from "react-redux";
-
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import { useNavigate } from "react-router-dom";
 const Book = () => {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({});
   const dispatch = useDispatch();
 
@@ -16,12 +19,14 @@ const Book = () => {
     event.preventDefault();
 
     dispatch(addUser(formData));
+    navigate('/users')
   }
 
   return (
     <div>
+      <Navbar/>
       <div>
-        <h3 className="flex justify-around m-5 text-3xl font-extrabold font-serif">
+        <h3 className="flex justify-around m-5 text-2xl font-extrabold font-serif">
           Book With Us
         </h3>
         <div className=" font-serif text-2xl  flex justify-center">
@@ -29,7 +34,7 @@ const Book = () => {
             onSubmit={handleSubmit}
             className="border-black border-2 px-10 rounded-3xl"
           >
-            <div className ="m-8">
+            <div className ="m-4">
             <div>
               <label htmlFor="name">Full Names:</label>
             </div>
@@ -39,7 +44,7 @@ const Book = () => {
                 name="name"
                 placeholder="Enter your FullName"
                 onChange={handleChange}
-                className="px-10 rounded-md m-2 "
+                className="px-16 rounded-md m-2 "
               />
             </div>
            <div>
@@ -52,7 +57,7 @@ const Book = () => {
                 name="email"
                 placeholder="Enter your Email"
                 onChange={handleChange}
-                className="px-10 rounded-md m-2  "
+                className="px-16 rounded-md m-2  "
               />
             </div>
             <div>
@@ -65,7 +70,7 @@ const Book = () => {
                 name="contact"
                 placeholder="Enter your Contact"
                 onChange={handleChange}
-                className="px-10 rounded-md m-2 "
+                className="px-16 rounded-md m-2 "
               />
             </div>
             <div>
@@ -102,7 +107,9 @@ const Book = () => {
             </div>
           </form>
         </div>
+
       </div>
+      <Footer/>
     </div>
   );
 };

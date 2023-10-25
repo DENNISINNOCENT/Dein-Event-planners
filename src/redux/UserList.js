@@ -29,8 +29,8 @@ export const UserList = () => {
   return (
     <div>
       <Navbar/>
-      <h1 className="flex justify-around font-[Poppins] text-3xl font-extrabold m-5">Clients Bookings</h1>
-    <div className="flex justify-around font-[Poppins] text-medium m-5">
+      <h1 className="md:flex justify-around font-[Poppins] text-3xl font-extrabold m-5">Clients Bookings</h1>
+    <div className="md:flex justify-around font-[Poppins] text-medium m-5">
       
       <table className="border-2 border-black border-spacing-8">
         <thead className="" >

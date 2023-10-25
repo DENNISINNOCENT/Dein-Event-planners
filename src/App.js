@@ -8,7 +8,7 @@ import BabyShower from './pages/BabyShower'
 import Funeral from './pages/Funeral'
 import Book from "./redux/Book";
 import  {UserList} from "./redux/UserList";
-// import Update from "./components/pages/Update";
+import Update from './redux/Update'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
         <Route path ="/funeral" element ={<Funeral/>}/> 
         <Route path ="/booking" element ={<Book/>}/> 
          <Route path ="/users" element ={<UserList/>}/>
-        {/* <Route path ="/edit/:id" element ={<Update/>}/>  */}
+        <Route path ="/edit/:id" element ={<Update/>}/> 
         
          
       

@@ -13,15 +13,17 @@ import Resources from "./components/Resources";
 import Contact from './components/Contact'
 import About from './components/About'
 
+
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path="/" index element={<Home/>}/>
-        <Route path ="/wedding" element ={<Wedding/>}/>
         <Route path ="/resources" element ={<Resources/>}/>
         <Route path ="/about" element ={<About/>}/>
         <Route path ="/contact" element ={<Contact/>}/>
+        <Route path ="/wedding" element ={<Wedding/>}/>
+        
         <Route path ="/traditional_wedding" element ={<TraditionalWedding/>}/>
         <Route path ="/graduations" element ={<Graduation/>}/>
         <Route path ="/babyShower" element ={<BabyShower/>}/>

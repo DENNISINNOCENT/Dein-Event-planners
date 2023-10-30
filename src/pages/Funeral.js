@@ -6,7 +6,9 @@ import Fslider from './Fslider'
 const Funeral = () => {
   return (
     <div>
-    <Navbar/>
+    <div>
+      <Navbar/>
+      </div>
     <Fslider/>
       <div className="font-[Poppins] grid grid-cols-3 justify-around gap-6 m-2">
         <div className="bg-white rounded-xl :">

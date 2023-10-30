@@ -8,14 +8,14 @@ const NavLink = () => {
       {NavLinks.map((NavLink) => (
         <div>
           <div className="text-left md:cursor-pointer px-3 group">
-            <Link to ={NavLink.path} className="py-7  ">{NavLink.name}</Link>
+          <Link to ={NavLink.path} className="py-7  ">{NavLink.name}</Link>
             {NavLink.subMenu && (
               <div className="absolute top-10 hidden group-hover:md:block hover:md:block py-5 ">
                 <div className="py-2">
                   <div className="bg-white p-3 ">
-                    {NavLink.subLinks.map((subLink) => (
+                    {NavLink.subLinks.map((subLink,index) => (
                       <div className="">
-                        <Link to={subLink.path} className="hover:text-cyan-600 " >
+                        <Link to={subLink.path} className="hover:text-cyan-600 " key={index}>
                           {subLink.name}
                         </Link>
                       </div>

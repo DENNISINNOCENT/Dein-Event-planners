@@ -24,7 +24,10 @@ const Book = () => {
 
   return (
     <div>
+      <div>
       <Navbar/>
+      </div>
+     
       <div>
         <h3 className="flex justify-around m-5 text-2xl font-extrabold font-serif">
           Book With Us
@@ -32,7 +35,7 @@ const Book = () => {
         <div className=" font-serif text-2xl  flex justify-center">
           <form
             onSubmit={handleSubmit}
-            className="border-black border-2 px-10 rounded-3xl"
+            className="border-black border-2 px-5 rounded-3xl"
           >
             <div className ="m-4">
             <div>
